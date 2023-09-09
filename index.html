@@ -2,11 +2,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Source+Code+Pro:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <title>Slack Profile</title>
 </head>
 <body>
   <div class="container">
-    <div>
+    <div class="content">
       <div class="slack-name">
         <p data-testid="slackUserName">Onan Thairu</p>
       </div>
@@ -14,18 +18,21 @@
         <img src="./assets/Onan_Thairu.jpeg" alt="profile" data-testid="slackDisplayImage">
       </div>
       <div class="track">
-        <p data-testid="myTrack"></p>
+        <p data-testid="myTrack">Frontend Track</p>
       </div>
-      <div class="time">
-        <p data-testid="currentDayOfTheWeek">Monday</p>
+      <div>
+        <p data-testid="currentDayOfTheWeek" id="day"></p>
       </div>
-      <div class="time">
-        <p data-testid="currentUTCTime">Milliseconds</p>
+      <div>
+        <p data-testid="currentUTCTime" id="time"></p>
       </div>
       <div class="github-profile">
-        <a data-testid=“githubURL” href="#"></a>
+        <a data-testid=“githubURL” href="https://github.com/Onan-Thairu" target="_blank">
+          <img src="./assets/github.svg" alt="github">
+        </a>
       </div>
     </div>
   </div>
+  <script src="./index.js"></script>
 </body>
 </html>
